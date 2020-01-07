@@ -1,0 +1,30 @@
+{
+  "name": "lab-02-classes",
+  "version": "1.0.0",
+  "description": "## Classes, Inheritance, Functional Programming",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataliealway-401-advanced-javascript/lab-02-classes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataliealway-401-advanced-javascript/lab-02-classes/issues"
+  },
+  "homepage": "https://github.com/nataliealway-401-advanced-javascript/lab-02-classes#readme",
+  "dependencies": {
+    "jest": "^24.9.0",
+    "lint": "^0.7.0",
+    "node": "^13.5.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.3"
+  }
+}
