@@ -101,5 +101,5 @@ describe('validator module performs complex validations', () => {
       }
     }
     expect(validator.isValid(schema, testRecord)).toBeTruthy();
-  })
+  });
 });
