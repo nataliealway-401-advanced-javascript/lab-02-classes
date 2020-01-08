@@ -1,26 +1,28 @@
 'use strict';
 
-let validator = module.exports = {};
+let validator = {};
 
-validator.isValid = (schema, input) => {
-  let valid = true;
+validator.isValid = (schema,data) => {
 
-  for( let fieldName in schema.fields) {
-    let field = schema.fields(fieldName);
-
-    // Am I required or set?
-    let required = field.required
-      ? validator.isTruthy(input[fieldName])
-      : true;
-    let type = field.type
-      ? validator.isCorrectType(field[fieldName], field)
-      : true;
-    if(!(required && type)){
-      return false;
+    let valid = true;
+  
+    for (let fieldName in schema.fields) {
+      let field = schema.fields[fieldName];
+      // Am I required and set?
+      let required = field.required
+        ? validator.isTruthy(data[fieldName])
+        : true;
+      // Am I the right type 
+      let type = field.type
+        ? validator.isCorrectType(data[fieldName], field)
+        : true;
+      // If anything is false ...
+      if (!(required && type)) {
+        valid = false;
+      }
     }
-  }
-  return valid;
-};
+    return valid;
+  };
 
 
 validator.isString = (input) => {
@@ -61,4 +63,6 @@ validator.isCorrectType = (input, field) => {
   default: return false;
   }
 };
+
+module.exports = validator;
 
