@@ -10,7 +10,7 @@
 
 
 #### Documentation
-* JSDoc - cd to docs, and run live-server
+* [JSDoc]()
 
 ### Modules
 index.js
