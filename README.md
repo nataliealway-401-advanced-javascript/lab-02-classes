@@ -10,7 +10,7 @@
 
 
 #### Documentation
-* JSDoc - cd to docs, and run live-server
+* [JSDoc](https://github.com/nataliealway-401-advanced-javascript/lab-02-classes/tree/workingBranch/docs)
 
 ### Modules
 index.js
